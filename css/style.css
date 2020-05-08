@@ -711,7 +711,7 @@ h1, h2, h3, h4, h5, h6, figure {
     margin-bottom: 20px; }
   .colorlib-staff h3 {
     font-size: 24px;
-    margin-bottom: 5px; }
+    margin-bottom: 12px; }
   .colorlib-staff p {
     margin-bottom: 30px; }
   .colorlib-staff .role {
@@ -1256,6 +1256,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .attorney-bio-square {
+  min-height: 175px;
   border: 1px solid #cccccc;
   border-radius: 5px;
   padding: 15px;
@@ -1278,11 +1279,15 @@ h1, h2, h3, h4, h5, h6, figure {
 
 .firm-description {
   text-align: left;
-  line-height: 2.75 !important;
+  line-height: 2.75;
 }
 
 @media screen and (min-width: 768px) {
   .services {
     min-height: 225px;
+  }
+
+  strong.role {
+    min-height: 60px;
   }
 }
