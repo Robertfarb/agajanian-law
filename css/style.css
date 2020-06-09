@@ -1282,6 +1282,16 @@ h1, h2, h3, h4, h5, h6, figure {
   line-height: 2.75;
 }
 
+.contact-form-blue {
+  background: #32496f;
+  padding: 30px;
+  border-radius: 12px;
+}
+
+.contact-header {
+  color: white;
+}
+
 @media screen and (min-width: 768px) {
   .services {
     min-height: 225px;
