@@ -1308,3 +1308,14 @@ h1, h2, h3, h4, h5, h6, figure {
   display: flex;
   align-items: center;
 }
+
+.practice-image-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.practice-image-container img {
+  max-height: 350px;
+}
