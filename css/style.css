@@ -77,7 +77,7 @@ h1, h2, h3, h4, h5, h6, figure {
   padding: 28px 0; }
 
 .colorlib-nav #colorlib-logo {
-  font-size: 24px;
+  font-size: 40px;
   margin: 0;
   padding: 0;
   text-transform: uppercase;
@@ -85,9 +85,7 @@ h1, h2, h3, h4, h5, h6, figure {
   font-weight: 700;
   font-family: "Playfair Display", Georgia, serif; }
   .colorlib-nav #colorlib-logo a {
-    color: #bea34d; }
-    .colorlib-nav #colorlib-logo a span {
-      color: #000; }
+    color: #000; }
 
 .colorlib-nav a {
   padding: 5px 10px;
@@ -1300,4 +1298,9 @@ h1, h2, h3, h4, h5, h6, figure {
   strong.role {
     min-height: 60px;
   }
+}
+
+.flex-header {
+  display: flex;
+  align-items: center;
 }
