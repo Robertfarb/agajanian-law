@@ -303,26 +303,26 @@
 }());
 
 // Custom JS
-function toggleButtonText(button) {
-	if (button.textContent === "Read More") {
-		button.textContent = "Read Less";
-	} else {
-		button.textContent = "Read More";
-	}
-}
+// function toggleButtonText(button) {
+// 	if (button.textContent === "Read More") {
+// 		button.textContent = "Read Less";
+// 	} else {
+// 		button.textContent = "Read More";
+// 	}
+// }
 
-function toggleBio(bio, button) {
-	bio.classList.toggle("expanded-bio");
-	toggleButtonText(button);
-}
+// function toggleBio(bio, button) {
+// 	bio.classList.toggle("expanded-bio");
+// 	toggleButtonText(button);
+// }
 
-const readMoreButtons = document.querySelectorAll('.read-more-bio');
+// const readMoreButtons = document.querySelectorAll('.read-more-bio');
 
-readMoreButtons.forEach(button => {
-	button.addEventListener('click', function(e) {
-		let bioNum = e.currentTarget.getAttribute('data-bio');
-		let pToExpand = document.getElementById(`bio-${bioNum}`);
+// readMoreButtons.forEach(button => {
+// 	button.addEventListener('click', function(e) {
+// 		let bioNum = e.currentTarget.getAttribute('data-bio');
+// 		let pToExpand = document.getElementById(`bio-${bioNum}`);
 
-		toggleBio(pToExpand, button);
-	});
-});
+// 		toggleBio(pToExpand, button);
+// 	});
+// });
