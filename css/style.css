@@ -1301,6 +1301,14 @@ h1, h2, h3, h4, h5, h6, figure {
   strong.role {
     min-height: 60px;
   }
+
+  .read-more-bio {
+    width: 125px;
+  }
+
+  .attorney-bio-square {
+    padding: 35px;
+  }
 }
 
 .flex-header {
