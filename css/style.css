@@ -363,7 +363,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #colorlib-blog,
 #colorlib-contact,
 #colorlib-footer {
-  padding: 7em 0;
+  padding: 25px;
   clear: both; }
   @media screen and (max-width: 768px) {
     #colorlib-about,
@@ -373,7 +373,7 @@ h1, h2, h3, h4, h5, h6, figure {
     #colorlib-blog,
     #colorlib-contact,
     #colorlib-footer {
-      padding: 3em 0; } }
+      padding: 15px; } }
 
 #colorlib-counter {
   padding: 4em 0;
@@ -835,7 +835,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #colorlib-footer {
   background: #0b162a;
   color: rgba(255, 255, 255, 0.5);
-  padding: 7em 0 4em 0; }
+  padding: 25px; }
   #colorlib-footer .colorlib-footer-links {
     padding: 0;
     margin: 0; }
@@ -1252,7 +1252,23 @@ h1, h2, h3, h4, h5, h6, figure {
   max-height: none;
 }
 
+.attorney-bios {
+  background-color: #000042;
+}
+
+.attorney-header {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+
+.attorney-header h2 {
+  color: #0b162a;
+  font-family: sans-serif;
+}
+
 .attorney-bio-square {
+  background-color: white;
   min-height: 175px;
   border: 1px solid #cccccc;
   border-radius: 5px;
@@ -1270,10 +1286,6 @@ h1, h2, h3, h4, h5, h6, figure {
   margin-bottom: 38px;
 }
 
-#colorlib-practice {
-  padding: 5em 0;
-}
-
 .firm-description {
   text-align: left;
   line-height: 2.75;
@@ -1288,6 +1300,84 @@ h1, h2, h3, h4, h5, h6, figure {
 .contact-header {
   color: white;
 }
+
+.contact-home-button {
+  width: 350px;
+  font-size: 48px !important;
+}
+
+.footer-container {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-header {
+  display: flex;
+  align-items: center;
+}
+
+.practice-image-container, .job-ops-image-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+
+.practice-image-container img {
+  max-height: 350px;
+  width: 100%;
+  padding: 15px;
+}
+
+.job-ops-image-container img {
+  max-height: 350px;
+  width: 100%;
+  padding: 15px;
+}
+
+#colorlib-contact {
+  margin-top: 48px;
+}
+
+.contact-thank-you {
+  color: white;
+  margin: 48px 0 48px 0;  
+}
+
+/* --------------------------- */
+/* Custom Attorney Page Styles */
+/* --------------------------- */
+.attorney-name {
+  color: #7093BA;
+}
+
+.attorney-bio-container {
+  display: flex;
+}
+
+.custom-attorney-left-section {
+  width: 60%;
+}
+
+.custom-attorney-right-section {
+  width: 30%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 19px 0 0 57px;
+}
+
+.custom-attorney-right-section img {
+  max-width: 200px;
+}
+
+/* --------------------------- */
+/* END Custom Attorney Page Styles */
+/* --------------------------- */
 
 @media screen and (min-width: 768px) {
   .services {
@@ -1309,20 +1399,8 @@ h1, h2, h3, h4, h5, h6, figure {
   .attorney-bio-square {
     padding: 35px;
   }
-}
 
-.flex-header {
-  display: flex;
-  align-items: center;
-}
-
-.practice-image-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-
-.practice-image-container img {
-  max-height: 350px;
+  .firm-container {
+    min-height: 75vh;
+  }
 }
