@@ -313,7 +313,7 @@ h1, h2, h3, h4, h5, h6, figure {
           color: white; }
         #colorlib-hero .flexslider .slider-text > .slider-text-inner h1 {
           margin-bottom: 20px;
-          font-size: 44px;
+          font-size: 50px;
           line-height: 1.3;
           font-weight: 700;
           text-transform: uppercase;
@@ -526,10 +526,10 @@ h1, h2, h3, h4, h5, h6, figure {
       color: rgba(255, 255, 255, 0.05); }
 
 .services {
+  background-color: #31486f;
   position: relative;
   padding: 30px;
   margin-bottom: 60px;
-  background: #fff;
   border: 1px solid rgba(0, 0, 0, 0.07);
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
@@ -537,7 +537,7 @@ h1, h2, h3, h4, h5, h6, figure {
   .services h3 {
     font-weight: 400; }
     .services h3 a {
-      color: #31486f; }
+      color: #fff; }
   .services .icon {
     text-align: center;
     margin: 0 auto;
@@ -556,10 +556,11 @@ h1, h2, h3, h4, h5, h6, figure {
       line-height: 40px;
       color: #31486f; }
   .services:hover, .services:focus {
-    background: #31486f;
-    color: rgba(255, 255, 255, 0.7); }
+    background: white;
+    color: #31486f;
+  }
     .services:hover h3 a, .services:focus h3 a {
-      color: #fff; }
+      color: #31486f; }
     .services:hover .icon i, .services:focus .icon i {
       color: #0080FF; }
 
@@ -639,7 +640,7 @@ h1, h2, h3, h4, h5, h6, figure {
   .colorlib-heading p {
     font-size: 18px;
     line-height: 1.5;
-    color: #828282; }
+    color: black; }
   .colorlib-heading span {
     display: block;
     margin-bottom: 10px;
@@ -1237,10 +1238,6 @@ h1, h2, h3, h4, h5, h6, figure {
 
 
 /* Custom Styles */
-#contact-container {
-  width: 49%;
-}
-
 .attorney-bio {
   max-height: 150px;
   overflow: hidden;
@@ -1379,14 +1376,7 @@ h1, h2, h3, h4, h5, h6, figure {
 
 .firm-flex-container {
   display: flex;
-}
-
-.firm-left, .firm-right {
-  width: 50%;
-}
-
-.blue-building-img {
-  max-width: 750px;
+  flex-direction: column;
 }
 
 .firm-underline {
@@ -1408,7 +1398,58 @@ h1, h2, h3, h4, h5, h6, figure {
   justify-content: center;
 }
 
+.firm-left h2 {
+  font-weight: 600;
+}
+
+.custom-attorney-bio p {
+  color: black;
+}
+
+.careers-description {
+  text-align: justify;
+  margin: 0 48px;
+}
+
+.form-control {
+  color: white;
+}
+
+.contact-image {
+  border-radius: 5px;
+  max-width: 55vw;
+  margin-bottom: 24px;
+}
+
+.blue-building-img {
+  max-width: 75vw;
+}
+
+.case-name {
+  font-style: italic;
+}
+
 @media screen and (min-width: 768px) {
+  #contact-container {
+    width: 49%;
+  }
+
+  .blue-building-img {
+   max-width: 750px;
+  }
+
+  .firm-left, .firm-right {
+    width: 50%;
+  }
+
+  .firm-container {
+    flex-direction: row;
+  }
+
+  .contact-image {
+    max-width: 350px;
+  }
+
   .services {
     justify-content: center;
     min-height: 175px;
@@ -1434,6 +1475,6 @@ h1, h2, h3, h4, h5, h6, figure {
   }
 
   #colorlib-hero .flexslider .slider-text > .slider-text-inner h2 {
-    font-size: 25px;
+    font-size: 30px;
   }
 }
