@@ -1343,23 +1343,20 @@ h1, h2, h3, h4, h5, h6, figure {
   margin: 48px 0 48px 0;  
 }
 
+.attorney-bio-container h2 {
+  margin-bottom: 2px;
+  margin-top: 14px;
+}
+
 /* --------------------------- */
 /* Custom Attorney Page Styles */
 /* --------------------------- */
 .attorney-name {
   color: #7093BA;
-}
-
-.attorney-bio-container {
-  display: flex;
-}
-
-.custom-attorney-left-section {
-  width: 60%;
+  font-weight: 800;
 }
 
 .custom-attorney-right-section {
-  width: 30%;
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -1480,5 +1477,27 @@ h1, h2, h3, h4, h5, h6, figure {
 
   #colorlib-hero .flexslider .slider-text > .slider-text-inner h2 {
     font-size: 30px;
+  }
+
+  .custom-attorney-right-section {
+    width: 30%;
+  }
+
+  .custom-attorney-left-section {
+    width: 60%;
+  }
+
+  .attorney-bio-container {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .custom-attorney-right-section img {
+    display: none;
+  }
+
+  .attorney-bio-container {
+    word-break: break-word;
   }
 }
