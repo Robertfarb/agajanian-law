@@ -1391,7 +1391,6 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .last-attorney-row {
-  display: flex;
   justify-content: center;
 }
 
@@ -1429,6 +1428,10 @@ h1, h2, h3, h4, h5, h6, figure {
 @media screen and (min-width: 768px) {
   #contact-container {
     width: 49%;
+  }
+
+  .last-attorney-row {
+    display: flex;
   }
 
   .firm-flex-container {
